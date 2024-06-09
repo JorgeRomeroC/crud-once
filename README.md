@@ -1,66 +1,65 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://www.linkedin.com/in/jorge-romero-contreras/" target="_blank"><img src="public/img/logo_romeroc.png" width="100" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Acerca del proyecto
+# Proyecto CRUD de Estudiantes
 
-## About Laravel
+## Descripción
+Este proyecto es una aplicación web para la gestión de estudiantes, desarrollado utilizando Laravel en su versión 11. La aplicación permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre los registros de estudiantes. Además, se han integrado varias tecnologías y herramientas para mejorar la experiencia del usuario y la funcionalidad de la aplicación.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Tecnologías Utilizadas
+- **Laravel 11**: Framework PHP utilizado para el desarrollo de la aplicación.
+- **Jetstream**: Proporciona un kit de inicio para la autenticación y la gestión de usuarios.
+- **Tailwind CSS**: Framework CSS utilizado para el diseño y la personalización de la interfaz de usuario.
+- **AlertifyJS**: Biblioteca JavaScript utilizada para mostrar notificaciones y alertas de manera elegante.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Características
+- **Registro y Autenticación de Usuarios**: Implementado con Jetstream, permite a los usuarios registrarse, iniciar sesión y gestionar sus perfiles.
+- **Gestión de Estudiantes**: 
+  - **Crear**: Permite agregar nuevos estudiantes a la base de datos.
+  - **Leer**: Muestra una lista de todos los estudiantes registrados con detalles completos.
+  - **Actualizar**: Permite modificar la información de los estudiantes existentes.
+  - **Eliminar**: Permite borrar registros de estudiantes de la base de datos.
+- **Interfaz de Usuario Responsiva**: Utilizando Tailwind CSS para asegurar que la aplicación se vea bien en dispositivos de todos los tamaños.
+- **Notificaciones y Alertas**: Implementadas con AlertifyJS para proporcionar feedback al usuario sobre las acciones realizadas (por ejemplo, creación, actualización y eliminación de registros).
+- **Búsqueda y Paginación**: Funcionalidad para buscar estudiantes y paginar los resultados para una mejor navegación.
+- **Validación de Formularios**: Validación tanto en el lado del cliente como del servidor para asegurar la integridad de los datos.
+- **Control de Acceso**: Gestión de permisos y roles para asegurar que solo los usuarios autorizados puedan realizar ciertas acciones.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Estructura del Proyecto
+- **Backend**: Desarrollado con Laravel, incluye controladores, modelos y migraciones para gestionar la lógica de la aplicación y la base de datos.
+- **Frontend**: Diseñado con Blade Templates y estilizado con Tailwind CSS para una experiencia de usuario moderna y responsiva.
+- **Autenticación y Seguridad**: Proporcionada por Jetstream, incluye inicio de sesión, registro, verificación de email, y recuperación de contraseñas.
 
-## Learning Laravel
+## Instalación y Configuración
+Para ejecutar este proyecto en tu entorno local, sigue los siguientes pasos:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+1. Clona el repositorio:
+   ```sh
+   https://github.com/JorgeRomeroC/crud-once.git
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+2. Navega al directorio del proyecto:
+   ```sh
+   cd tu-proyecto
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+3. Instala las dependencias de Composer:
+   ```sh
+    composer install
 
-## Laravel Sponsors
+4. Copia el archivo `.env.example` y renómbralo a `.env`:
+    ```sh
+    cp .env.example .env
+5. Genera la clave de la aplicación:
+   ```sh
+   php artisan key:generate
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+6. Configura tu base de datos en el archivo `.env`:
+   ```sh
+    php artisan migrate
 
-### Premium Partners
+7. Migra la base de datos:
+   ```sh
+   php artisan migrate
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+8. Inicia el servidor de desarrollo:
+   ```sh
+   php artisan serve
