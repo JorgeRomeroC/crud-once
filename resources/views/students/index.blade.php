@@ -58,7 +58,7 @@
 </x-app-layout>
 <script>
 function confirmDelete(id) {
-    alertify.confirm("¿Confirm delete record?",
+    alertify.confirm("Estas a un paso de eliminar un Estudiante, ¿Cofirmas?",
     function(){
         let form = document.createElement('form');
         form.method = 'POST';
